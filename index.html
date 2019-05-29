@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+    <h1> My Todo List</h1>
+    
+    <div>
+      <button id="displayTodosBtn">Display the Todos</button>
+      <button id="toggleAllBtn">Toggle All</button>
+      <p></p>
+      <button onclick="handlers.displayTodos()">Display the Todos</button>
+      <button onclick="handlers.toggleAll()">Toggle All</button>
+      <p></p>  
+    </div>
+    
+    <div>
+      <button onclick="handlers.addTodo()">Add</button> 
+      <input id="addTodoTextInput" type="text">
+    </div>
+    
+    <p></p>
+    
+    <div>
+      <button onclick="handlers.changeTodo()">Change Todo</button>
+      <input id="changeTodoPositionInput" type="number">
+      <input id="changeTodoTextInput" type="text">
+    </div>
+    
+    <p></p>
+    
+    <div>
+      <button onclick="handlers.deleteTodo()">Delete</button>
+      <input id="deleteTodoPositionInput" type="number">
+    </div>
+    
+    <p></p>
+  
+    <div>
+      <button onclick="handlers.toggleCompleted()">Toggle Completed</button>
+      <input id="toggleCompletedPositionInput" type="number">
+    </div>
+    
+    <ul>
+      
+    </ul>
+    
+    
+      <script src="script.js"></script>
+  </body>
+
+</html>
